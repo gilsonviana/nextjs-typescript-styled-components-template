@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Text, TitleXL, Container } from "@styled/index";
+import { Text, TitleXL, Container, Row, Col } from "@styled/index";
 
 export default function Home() {
   return (
@@ -9,12 +9,43 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <TitleXL>Title XL</TitleXL>
-        <Text weight="bold" size="extra" color="primary">
-          Hello World
-        </Text>
-      </main>
+      <TitleXL>Title XL</TitleXL>
+      <Row>
+        <Col>
+          <Text center weight="bold" size="extra" color="primary">
+            Hello World
+          </Text>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Text center weight="bold" size="extra" color="primary">
+            Hello World
+          </Text>
+        </Col>
+        <Col>
+          <Text center weight="bold" size="extra" color="primary">
+            Hello World
+          </Text>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Text center weight="bold" size="extra" color="primary">
+            Hello World
+          </Text>
+        </Col>
+        <Col>
+          <Text center weight="bold" size="extra" color="primary">
+            Hello World
+          </Text>
+        </Col>
+        <Col>
+          <Text center weight="bold" size="extra" color="primary">
+            Hello World
+          </Text>
+        </Col>
+      </Row>
     </Container>
   );
 }

@@ -13,19 +13,19 @@ export const StyledContainer = styled.div.attrs({
   padding-right: ${(props) =>
     props.fluid ? `0` : props.theme.containerPadding};
 
-  @media (${(props) => props.theme.breakpoints.sm}) {
+  @media (min-width: ${(props) => props.theme.breakpoints.sm}) {
     width: 320px;
   }
 
-  @media (${(props) => props.theme.breakpoints.md}) {
+  @media (min-width: ${(props) => props.theme.breakpoints.md}) {
     width: 745px;
   }
 
-  @media (${(props) => props.theme.breakpoints.lg}) {
+  @media (min-width: ${(props) => props.theme.breakpoints.lg}) {
     width: 900px;
   }
 
-  @media (${(props) => props.theme.breakpoints.xl}) {
+  @media (min-width: ${(props) => props.theme.breakpoints.xl}) {
     width: 1100px;
   }
 `;
