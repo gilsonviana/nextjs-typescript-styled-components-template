@@ -1,10 +1,10 @@
 import Head from "next/head";
 
-import { Text, TitleXL } from "@styled/index";
+import { Text, TitleXL, Container } from "@styled/index";
 
 export default function Home() {
   return (
-    <div>
+    <Container>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -15,6 +15,6 @@ export default function Home() {
           Hello World
         </Text>
       </main>
-    </div>
+    </Container>
   );
 }

@@ -13,6 +13,7 @@ export interface ITheme {
     size: ThemeFontSizeKeys<ThemeFontSizeOptions>;
     weight: ThemeFontWeightKeys<ThemeFontWeightOptions>;
   };
+  containerPadding: string;
   breakpoints: ThemeBreakpointKeys<ThemeBreakpointOptions>;
 }
 
@@ -99,6 +100,7 @@ const theme: ITheme = {
       regular: 400,
     },
   },
+  containerPadding: `15px`,
   breakpoints: {
     sm: `375px`,
     md: `768px`,

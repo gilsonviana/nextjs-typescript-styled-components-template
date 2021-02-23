@@ -11,5 +11,6 @@ export const GlobalStyle = createGlobalStyle<any>`
   }
   body {
     font-family: ${(props) => props.theme.font.family.primary};
+    margin: 0;
   }
 `;
