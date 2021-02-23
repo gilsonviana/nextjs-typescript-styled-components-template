@@ -1,18 +1,15 @@
 import styled from "styled-components";
 
-import { IText } from "./interface";
+import { ITitleXL } from "./interface";
 
-export const StyledText = styled.p.attrs({
-  className: `custom__text`,
-})<IText>`
+export const StyledTitleXL = styled.h1.attrs({
+  className: `custom__title__xl`,
+})<ITitleXL>`
   font-weight: ${(props) =>
     props.weight
       ? props.theme.font.weight[props.weight]
-      : props.theme.font.weight.regular};
-  font-size: ${(props) =>
-    props.size
-      ? props.theme.font.size[props.size]
-      : props.theme.font.size.regular};
+      : props.theme.font.weight.semiBold};
+  font-size: ${(props) => props.theme.font.size.extra};
   color: ${(props) =>
     props.color ? props.theme.color[props.color] : props.theme.color.dark};
   margin: ${(props) => (!props.margin ? `0` : `.5rem`)};

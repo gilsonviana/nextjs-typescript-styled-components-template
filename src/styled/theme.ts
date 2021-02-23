@@ -1,4 +1,3 @@
-// import { DefaultTheme } from 'styled-components';
 import "styled-components";
 
 declare module "styled-components" {
@@ -14,7 +13,15 @@ export interface ITheme {
     size: ThemeFontSizeKeys<ThemeFontSizeOptions>;
     weight: ThemeFontWeightKeys<ThemeFontWeightOptions>;
   };
+  breakpoints: ThemeBreakpointKeys<ThemeBreakpointOptions>;
 }
+
+export type ThemeBreakpointOptions = {
+  sm: string;
+  md: string;
+  lg: string;
+  xl: string;
+};
 
 export type ThemeColorOptions = {
   primary: string;
@@ -48,6 +55,10 @@ type ThemeFontSizeKeys<Options> = {
 
 type ThemeFontWeightKeys<Options> = {
   [Property in keyof Options]: number;
+};
+
+type ThemeBreakpointKeys<Options> = {
+  [Property in keyof Options]: string;
 };
 
 const FONT_FAMILIES: { [key: string]: string } = {
@@ -87,6 +98,12 @@ const theme: ITheme = {
       semiBold: 600,
       regular: 400,
     },
+  },
+  breakpoints: {
+    sm: `375px`,
+    md: `768px`,
+    lg: `920px`,
+    xl: `1200px`,
   },
 };
 

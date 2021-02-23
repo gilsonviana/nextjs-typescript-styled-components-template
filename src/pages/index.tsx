@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import { Text } from "@styled/index";
+import { Text, TitleXL } from "@styled/index";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <TitleXL>Title XL</TitleXL>
         <Text weight="bold" size="extra" color="primary">
           Hello World
         </Text>

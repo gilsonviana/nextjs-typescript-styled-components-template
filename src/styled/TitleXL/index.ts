@@ -1,0 +1,1 @@
+export { StyledTitleXL } from "./styled";
